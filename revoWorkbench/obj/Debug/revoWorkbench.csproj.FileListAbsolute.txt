@@ -1,0 +1,12 @@
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\revoWorkbench.exe.config
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\revoWorkbench.exe
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\revoWorkbench.pdb
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\Newtonsoft.Json.dll
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\Newtonsoft.Json.xml
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\obj\Debug\revoWorkbench.Form1.resources
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\obj\Debug\revoWorkbench.Properties.Resources.resources
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\obj\Debug\revoWorkbench.csproj.GenerateResource.Cache
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\obj\Debug\revoWorkbench.exe
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\obj\Debug\revoWorkbench.pdb
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\Resources\TestS3BrowserAutomation.exe
+C:\Program Files\Code_Learn\WorkBench_WORK\revoWorkbench\revoWorkbench\bin\Debug\Resources\S3BrowserConfiguration.json
