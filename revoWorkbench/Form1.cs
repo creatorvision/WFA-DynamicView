@@ -12,11 +12,16 @@ using Newtonsoft.Json.Linq;
 using System.Diagnostics;
 using System.Windows.Input;
 using System.Windows.Forms;
+using Amazon;
+using Amazon.S3;
+using Amazon.S3.Model;
+
 
 using System.IO;
 
 namespace revoWorkbench
 {
+
     public partial class Form1 : Form
     {
         private readonly string S3BrowserExe = "TestS3BrowserAutomation.exe";
@@ -24,6 +29,13 @@ namespace revoWorkbench
 
         public Form1()
         {
+
+            S3 s3 = new S3();
+            s3.bucketsLists();
+            s3.bucketElements("revoworkbench");
+            s3.downloadFile("revoworkbench", "userView.json");
+
+
             InitializeComponent();
 
             //Layout
@@ -41,7 +53,7 @@ namespace revoWorkbench
 
 
             //Open the file              
-            var stream = File.OpenText("..\\..\\..\\userView.json");
+            var stream = File.OpenText(System.Configuration.ConfigurationSettings.AppSettings["datajson"]);
             //Read the file              
             string st = stream.ReadToEnd();
             var Jresult = JArray.Parse(st);
@@ -78,12 +90,11 @@ namespace revoWorkbench
 
                 linkLabel1.Click += (sender, e) =>
                 {
-                    string json = ReadJson(Environment.CurrentDirectory + "\\Resources\\" + configFile);
+                    string json = ReadJson(System.Configuration.ConfigurationSettings.AppSettings["path"] + "\\Resources\\" + configFile);
                     S3BrowserCredentials s3BrowserCredentials = getCredentialsFromJson(json);
                     string args = s3BrowserCredentials.AccountName + " " + s3BrowserCredentials.AccessKeyId + " " +
                                   s3BrowserCredentials.SecretAccessKey;
-                    var proc = System.Diagnostics.Process.Start(Environment.CurrentDirectory + "\\Resources\\" + S3BrowserExe, args);
-                    proc.Start();
+                    var proc = System.Diagnostics.Process.Start(System.Configuration.ConfigurationSettings.AppSettings["path"] + "\\Resources\\" + S3BrowserExe, args);
                 };
                 
             }

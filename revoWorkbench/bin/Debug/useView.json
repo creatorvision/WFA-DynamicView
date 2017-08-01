@@ -1,0 +1,26 @@
+[
+	{
+		"id":1,
+		"logo":"https://socserv.socsci.mcmaster.ca/jfox/Courses/R/GTAR-packages/Rlogo.png",
+		"browserName":"Chrome",
+		"Url":"https://www.rstudio.com/"
+	},
+	{
+		"id":2,
+		"logo":"https://murillogroupmsucom.files.wordpress.com/2016/05/7388996.png",
+		"browserName":"Chrome",
+		"Url":"http://jupyter.org/"
+	},
+	{
+		"id":3,
+		"logo":"https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png",
+		"browserName":"Chrome",
+		"Url":"https://www.google.com/chrome/browser/desktop/index.html?brand=CHBD&gclid=CjwKCAjwzYDMBRA1EiwAwCv6JiKBKaE76m8m4yq0ZDtChu_OTeLCm1idBULO9GgRhBQ4UvkCmmF0SxoCr0gQAvD_BwE"
+	},
+	{
+		"id":4,
+		"logo":"https://pbs.twimg.com/profile_images/501572396810129408/DTgFCs-n.png",
+		"browserName":"Chrome",
+		"Url":"https://www.h2o.ai/"
+	}
+]	
