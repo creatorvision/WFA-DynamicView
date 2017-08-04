@@ -3,24 +3,60 @@
 		"id":1,
 		"logo":"https://socserv.socsci.mcmaster.ca/jfox/Courses/R/GTAR-packages/Rlogo.png",
 		"browserName":"Chrome",
-		"Url":"https://www.rstudio.com/"
+		"Url":"https://www.rstudio.com/",
+		"Name":"R Studio",
+		"Type" :"",
+		"Company":"ZS",
+		"Email":"",
+		"FirstName":"",
+		"LastName" :""
 	},
 	{
 		"id":2,
 		"logo":"https://murillogroupmsucom.files.wordpress.com/2016/05/7388996.png",
 		"browserName":"Chrome",
-		"Url":"http://jupyter.org/"
+		"Url":"http://jupyter.org/",
+		"Name":"Jupyter",
+		"Type" :"",
+		"Company":"ZS",
+		"Email":"",
+		"FirstName":"",
+		"LastName" :""
 	},
 	{
 		"id":3,
 		"logo":"https://cdn0.iconfinder.com/data/icons/jfk/512/chrome-512.png",
 		"browserName":"Chrome",
-		"Url":"https://www.google.com/chrome/browser/desktop/index.html?brand=CHBD&gclid=CjwKCAjwzYDMBRA1EiwAwCv6JiKBKaE76m8m4yq0ZDtChu_OTeLCm1idBULO9GgRhBQ4UvkCmmF0SxoCr0gQAvD_BwE"
+		"Url":"https://www.google.com/chrome/browser/desktop/index.html?brand=CHBD&gclid=CjwKCAjwzYDMBRA1EiwAwCv6JiKBKaE76m8m4yq0ZDtChu_OTeLCm1idBULO9GgRhBQ4UvkCmmF0SxoCr0gQAvD_BwE",
+		"Name":"Chrome",
+		"Type" :"",
+		"Company":"ZS",
+		"Email":"",
+		"FirstName":"",
+		"LastName" :""
 	},
 	{
 		"id":4,
 		"logo":"https://pbs.twimg.com/profile_images/501572396810129408/DTgFCs-n.png",
 		"browserName":"Chrome",
-		"Url":"https://www.h2o.ai/"
+		"Url":"https://www.h2o.ai/",
+		"Name":"H20",
+		"Type" :"",
+		"Company":"ZS",
+		"Email":"",
+		"FirstName":"",
+		"LastName" :""
+	},
+	{
+		"id":5,
+		"logo":"https://yt3.ggpht.com/-uGOgaKSeMvA/AAAAAAAAAAI/AAAAAAAAAAA/G97wnFyTyjc/s900-c-k-no-mo-rj-c0xffffff/photo.jpg",
+		"browserName":"Chrome",
+		"Url":"",
+	    "Name":"Tableau Desktop",
+		"Type" :"Desktop",
+		"Company":"ZS",
+		"Email":"akshat.jhalani@zs.com",
+		"FirstName":"Akshat",
+		"LastName" :"Jhalani"
 	}
 ]	

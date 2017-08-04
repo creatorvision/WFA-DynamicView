@@ -2,6 +2,7 @@
 using Amazon.S3.Model;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,13 +11,14 @@ namespace revoWorkbench
 {
     public class S3
     {
-        const string accesskey = "AKIAJ433F7AKPW2D7GZA";
-        const string secretkey = "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";
+        string temp = Path.GetTempPath();
+        //const string accesskey = "AKIAJ433F7AKPW2D7GZA";
+        //const string secretkey = "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";
         AmazonS3Client client;
         
         public S3()
         {
-            this.client = new AmazonS3Client(accesskey, secretkey,Amazon.RegionEndpoint.USWest2);     
+            this.client = new AmazonS3Client(System.Configuration.ConfigurationSettings.AppSettings["s3accessKey"], System.Configuration.ConfigurationSettings.AppSettings["s3screctKey"], Amazon.RegionEndpoint.USWest2);     
         }
 
         public void bucketsLists()
@@ -33,10 +35,10 @@ namespace revoWorkbench
             GetObjectRequest request = new GetObjectRequest();
             request.BucketName = bucketName;
             request.Key = fileName;
-            GetObjectResponse releaseresponse = client.GetObject(request);
-            GetObjectResponse debugresponse = client.GetObject(request);
-            releaseresponse.WriteResponseStreamToFile(System.Configuration.ConfigurationSettings.AppSettings["path"]+"\\bin\\Release\\userView.json");
-            debugresponse.WriteResponseStreamToFile(System.Configuration.ConfigurationSettings.AppSettings["path"] +"\\bin\\Debug\\useView.json");
+            GetObjectResponse response = client.GetObject(request);
+            //GetObjectResponse debresponse = client.GetObject(request);
+            response.WriteResponseStreamToFile(temp+"userView.json");
+            //debresponse.WriteResponseStreamToFile(System.Configuration.ConfigurationSettings.AppSettings["path"] +"\\bin\\debug\\userView.json");
         }
 
     }
